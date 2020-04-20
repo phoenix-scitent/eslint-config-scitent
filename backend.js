@@ -5,7 +5,10 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: { jsx: true },
   },
-  env: { jest: true, given: true },
+  env: { jest: true },
+  globals: {
+    given: true,
+  },
   rules: {
     complexity: ['warn', 4],
     'max-len': [
