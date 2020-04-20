@@ -1,10 +1,11 @@
 module.exports = {
   extends: ['airbnb/base', 'plugin:prettier/recommended'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jest'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: { jsx: true },
   },
+  env: { jest: true, given: true },
   rules: {
     complexity: ['warn', 4],
     'max-len': [
