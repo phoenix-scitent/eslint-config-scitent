@@ -1,9 +1,21 @@
 {
   "name": "eslint-config-scitent",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Scitent's ESLint config",
   "author": "Scitent Inc.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phoenix-scitent/eslint-config-scitent.git"
+  },
+  "keywords": [
+    "config",
+    "eslint",
+    "eslintconfig",
+    "javascript",
+    "scitent",
+    "styleguide"
+  ],
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
