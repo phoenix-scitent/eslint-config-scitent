@@ -1,0 +1,38 @@
+module.exports = {
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
+  globals: {
+    window: true,
+    document: true,
+    localStorage: true,
+    FormData: true,
+    FileReader: true,
+    Blob: true,
+    navigator: true,
+  },
+  rules: {
+    'max-len': [
+      'error',
+      {
+        code: 100,
+        ignoreRegExpLiterals: true,
+        ignoreTemplateLiterals: true,
+        ignoreUrls: true,
+        ignoreComments: true,
+        ignoreTrailingComments: true,
+        ignorePattern: '^import.*',
+      },
+    ],
+    'object-curly-newline': ['error', { consistent: true }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'prefer-destructuring': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-one-expression-per-line': 'off',
+    'react/prop-types': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/require-default-props': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/destructuring-assignment': 'off',
+  },
+};
