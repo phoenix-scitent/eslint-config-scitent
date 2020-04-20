@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-scitent",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Scitent's ESLint config",
   "author": "Scitent Inc.",
   "license": "MIT",
