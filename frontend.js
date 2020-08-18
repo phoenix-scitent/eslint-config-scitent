@@ -1,6 +1,10 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended'],
   plugins: ['prettier'],
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: { jsx: true },
+  },
   globals: {
     window: true,
     document: true,
@@ -19,6 +23,7 @@ module.exports = {
         ignoreTemplateLiterals: true,
         ignoreUrls: true,
         ignoreComments: true,
+        ignoreStrings: true,
         ignoreTrailingComments: true,
         ignorePattern: '^import.*',
       },
@@ -28,6 +33,7 @@ module.exports = {
     'prefer-destructuring': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-wrap-multilines': ['error', { declaration: false, assignment: false }],
     'react/jsx-one-expression-per-line': 'off',
     'react/prop-types': 'off',
     'react/forbid-prop-types': 'off',

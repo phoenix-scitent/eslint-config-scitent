@@ -10,7 +10,7 @@ module.exports = {
     given: true,
   },
   rules: {
-    complexity: ['warn', 4],
+    complexity: ['warn', 10],
     'max-len': [
       'error',
       {
@@ -19,6 +19,7 @@ module.exports = {
         ignoreTemplateLiterals: true,
         ignoreUrls: true,
         ignoreComments: true,
+        ignoreStrings: true,
         ignoreTrailingComments: true,
         ignorePattern: '^import.*',
       },

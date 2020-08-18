@@ -10,6 +10,7 @@ module.exports = {
         ignoreTemplateLiterals: true,
         ignoreUrls: true,
         ignoreComments: true,
+        ignoreStrings: true,
         ignoreTrailingComments: true,
         ignorePattern: '^import.*',
       },
